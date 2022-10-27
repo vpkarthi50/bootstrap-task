@@ -282,8 +282,6 @@
 #portfolio .port{
 	background-color:#fff;
 }
-
-/*portfolio media ends*/
 #portfolio h3{
 	margin:7% 0 0 0;
 	color:#c2b7b1;
@@ -305,6 +303,21 @@
 	width:4rem;
 	height:1rem;
 	border-bottom:2px solid #eb5d1e;
+}
+#portfolio img{
+	border-radius:6%;
+}
+#portfolio .card-over{
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position:absolute;
+	background:rgba(122, 105, 96, 0.6);
+}
+#portfolio i{
+	border-radius:50%;
+	background-color:#fff;
 }
 @media(min-width:360px){
 #portfolio h2{
@@ -338,3 +351,239 @@
 	left:47%;
 }
 }
+
+/*portfolio media ends*/
+
+/*faq media starts*/
+
+#faq,.faqq{
+	margin:8% 0 0 0;
+	background-color:#fef8f5;
+}
+#faq h3{
+	margin:4% 0 0 0;
+	color:#c2b7b1;
+	font-weight:600;
+}
+#faq h2{
+	margin:4% 0 0 0;
+	font-size:2rem;
+	line-height:1.4;
+	color:#4e4039;
+	font-weight:700;
+	position:relative;
+}
+#faq h2::after{
+	content:"";
+	position:absolute;
+	display:block;
+	left:40%;
+	width:4rem;
+	height:1rem;
+	border-bottom:2px solid #eb5d1e;
+}
+#faq .accordion-button{
+	background-color:#fef8f5;
+	color:#343a40;
+}
+#faq .accordion-button:hover{
+	background-color:#fef8f5;
+	color:#c54811;
+}
+#faq .accordion-button:not(.collapsed)::before {
+    background-image: url(../assets/faq.svg);
+    transform: rotate(-180deg);
+}
+#faq .accordion-button::before {
+    flex-shrink: 0 !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin: 0 22px 0px 0px !important;
+    content: "" !important;
+    background-image: url(../assets/faq.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 1.25rem !important;
+    transition: transform .2s ease-in-out !important;
+}
+#faq .accordion-button::after {
+	display:none !important;
+}
+#faq .accordion-button:focus {
+    z-index: 3;
+    border-color: red;
+    outline: 0;
+    box-shadow: none !important;
+}
+#faq .accordion-body{
+	background-color:#fef8f5;
+	padding:0 0 0 20%;
+}
+@media(min-width:360px){
+#faq h2{
+	font-size:2.2rem;
+}
+#faq h2::after{
+	left:42%;
+}
+#faq .accordion-body{
+	padding:0 0 0 17%;
+}
+}
+@media(min-width:760px){
+#faq h3{
+	font-weight:700;
+}
+#faq h2{
+	margin:0.6% 0 0 0;
+	font-size:2.1rem;
+}
+#faq h2::after{
+	left:45%;
+}
+#faq .accordion-body{
+	padding:0 0 0 9%;
+}
+}
+@media(min-width:1020px){
+#faq h3{
+	font-size:1.6rem;
+}
+#faq h2{
+	margin:0.6% 0 0 0;
+	font-size:2.1rem;
+}
+#faq h2::after{
+	left:47%;
+}
+#faq .accordion-body{
+	padding:0 0 0 7%;
+}
+}
+/*faq media ends*/
+
+/*team media starts*/
+
+#team h3{
+	margin:5% 0 0 0;
+	color:#c2b7b1;
+	font-weight:600;
+}
+#team h2{
+	margin:4% 0 0 0;
+	font-size:2rem;
+	line-height:1.4;
+	color:#4e4039;
+	font-weight:700;
+	position:relative;
+}
+#team h2::after{
+	content:"";
+	position:absolute;
+	display:block;
+	left:40%;
+	width:4rem;
+	height:1rem;
+	border-bottom:2px solid #eb5d1e;
+}
+@media(min-width:360px){
+#team h2{
+	font-size:2.2rem;
+}
+#team h2::after{
+	left:42%;
+}
+}
+@media(min-width:760px){
+#team h3{
+	font-weight:700;
+}
+#team h2{
+	margin:0.6% 0 0 0;
+	font-size:2.1rem;
+}
+#team h2::after{
+	left:45%;
+}
+}
+@media(min-width:1020px){
+#team h3{
+	font-size:1.6rem;
+}
+#team h2{
+	margin:0.6% 0 0 0;
+	font-size:2.1rem;
+}
+#team h2::after{
+	left:47%;
+}
+}
+/*team media ends*/
+
+
+/*clients media starts*/
+#client,.clients{
+	background-color:#fef8f5;
+	margin:5% 0 0 0;
+}
+#client h3{
+	margin:5% 0 0 0;
+	color:#c2b7b1;
+	font-weight:600;
+}
+#client h2{
+	margin:4% 0 0 0;
+	font-size:2rem;
+	line-height:1.4;
+	color:#4e4039;
+	font-weight:700;
+	position:relative;
+}
+#client h2::after{
+	content:"";
+	position:absolute;
+	display:block;
+	left:40%;
+	width:4rem;
+	height:1rem;
+	border-bottom:2px solid #eb5d1e;
+}
+#client .carousel-item{
+	width:15%
+}
+#client .carousel-item img{
+	width:100%
+}
+@media(min-width:360px){
+#client h2{
+	font-size:2.2rem;
+}
+#client h2::after{
+	left:42%;
+}
+}
+@media(min-width:760px){
+#client h3{
+	font-weight:700;
+}
+#client h2{
+	margin:0.6% 0 0 0;
+	font-size:2.1rem;
+}
+#client h2::after{
+	left:45%;
+}
+}
+@media(min-width:1020px){
+#client h3{
+	font-size:1.6rem;
+}
+#client h2{
+	margin:0.6% 0 0 0;
+	font-size:2.1rem;
+}
+#client h2::after{
+	left:47%;
+}
+}
+
+/*clients media ends*/
