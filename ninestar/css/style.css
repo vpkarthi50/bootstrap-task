@@ -306,18 +306,38 @@
 }
 #portfolio img{
 	border-radius:6%;
+	padding:2px;
 }
 #portfolio .card-over{
+	opacity:0;
 	top:0;
 	bottom:0;
 	left:0;
-	right:0;
+	right:0;	
+	border-radius:6%;
 	position:absolute;
 	background:rgba(122, 105, 96, 0.6);
 }
+#portfolio .card-over:hover{
+	opacity:1;
+	overflow:hidden;
+	left:0;
+}
 #portfolio i{
+	font-size:1.5rem;
 	border-radius:50%;
+	margin:0 0.4rem;
+	width:2rem;
+	height:2rem;
+	padding:2%;
 	background-color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#portfolio .port-info{
+	display:block;
+	color:#fff;
 }
 @media(min-width:360px){
 #portfolio h2{
@@ -484,6 +504,56 @@
 	width:4rem;
 	height:1rem;
 	border-bottom:2px solid #eb5d1e;
+}
+#team .team-hover{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	
+}
+#team .team-social{
+	opacity:0;
+	font-size:1.1rem;
+	background:rgba(78, 64, 57, 0.6);
+	top:0;
+	bottom:0;
+	width:20%;
+	left:0;
+	position:absolute;
+}
+
+#team .team-social a{
+	margin:0 20%;
+	color:#fff;
+	padding:15% 0;
+}
+#team img{
+	padding:2px;
+}
+#team .team-name{
+	opacity:0;
+	z-index:4;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+}
+#team .team-name h4{
+	color:#fff;
+	font-size:1.2rem;
+}
+#team .team-name p{
+	color:#fff;
+	font-size:0.8rem;
+	font-style:italic;
+}
+#team .team-hover:hover .team-social{
+	opacity:1;
+}
+#team .team-hover:hover .team-name{
+	opacity:1;
 }
 @media(min-width:360px){
 #team h2{
@@ -662,7 +732,14 @@
 	border-bottom:2px solid #eb5d1e;
 	border-top:2px solid #eb5d1e;
 }
-/
+#contact input{
+	box-shadow:none;
+	border-color:#ced4da;
+}
+#contact textarea{
+	box-shadow:none;
+	border-color:#ced4da;
+}
 /*news letter media starts*/
 .news{
     background-color: #fef8f5;
@@ -752,11 +829,12 @@ input:focus{
 
 #copyright,.cright{
     background-color: #fef8f5 !important;
+	padding:1%;
 }
 #copyright span{
 	color:#eb5d1e;
 }
-@media(min-width:1020px);{
+@media(min-width:1020px){
 #copyright .alr{
 	text-align:center;
 	float:left;
